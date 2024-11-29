@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">EtacProyect1</string>
+
+    <string-array name="programa_estudio_options">
+        <item>Ofimática</item>
+        <item>Arquitectura</item>
+        <item>Diseño Gráfico</item>
+    </string-array>
+
+    <string-array name="sexo_options">
+        <item>M</item>
+        <item>F</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

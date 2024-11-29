@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F1F1F1">
+
+            <ImageView
+                android:id="@+id/imageView39"
+                android:layout_width="129dp"
+                android:layout_height="108dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginBottom="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.378"
+                app:srcCompat="@drawable/img_6" />
+
+            <TextView
+                android:id="@+id/filaProgramaClase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="104dp"
+                android:fontFamily="@font/acherusbold"
+                android:text="DISEÑO GRÁFICO"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView39"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/filaCursoClase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="104dp"
+                android:fontFamily="@font/acheruslight"
+                android:text="CURSO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView39"
+                app:layout_constraintTop_toBottomOf="@+id/filaProgramaClase" />
+
+            <TextView
+                android:id="@+id/filaFechaInicioClase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/acherusbold"
+                android:text="00 AM"
+                app:layout_constraintEnd_toStartOf="@+id/textView44"
+                app:layout_constraintStart_toEndOf="@+id/imageView39"
+                app:layout_constraintTop_toBottomOf="@+id/filaCursoClase" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/acherusbold"
+                android:text="-"
+                app:layout_constraintEnd_toStartOf="@+id/filaFechaFinClase"
+                app:layout_constraintStart_toEndOf="@+id/filaFechaInicioClase"
+                app:layout_constraintTop_toBottomOf="@+id/filaCursoClase" />
+
+            <TextView
+                android:id="@+id/filaFechaFinClase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/acherusbold"
+                android:text="00 PM"
+                app:layout_constraintEnd_toStartOf="@+id/textView46"
+                app:layout_constraintStart_toEndOf="@+id/textView44"
+                app:layout_constraintTop_toBottomOf="@+id/filaCursoClase" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:fontFamily="@font/acherusbold"
+                android:text="|"
+                app:layout_constraintEnd_toStartOf="@+id/filaDiaClase"
+                app:layout_constraintStart_toEndOf="@+id/filaFechaFinClase"
+                app:layout_constraintTop_toBottomOf="@+id/filaCursoClase" />
+
+            <TextView
+                android:id="@+id/filaDiaClase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/acherusbold"
+                android:text="MIÉRCOLES"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView46"
+                app:layout_constraintTop_toBottomOf="@+id/filaCursoClase"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

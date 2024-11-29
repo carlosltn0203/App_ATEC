@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/atecwallp"
+    tools:context=".AdminActivity">
+
+    <ImageView
+        android:id="@+id/btnSitioWeb"
+        android:layout_width="43dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/web"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAulaVirtual"
+        app:layout_constraintStart_toEndOf="@+id/btnSede" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="166dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ateclogo" />
+
+    <TextView
+        android:id="@+id/nameadmin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="180dp"
+        android:fontFamily="@font/acheruslight"
+        android:text="Administrador"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="71dp"
+        android:fontFamily="@font/acherusbold"
+        android:text="¡TE DAMOS LA BIENVENIDA!"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="93dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCerrarSesion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/adminlogo" />
+
+    <TextView
+        android:id="@+id/nameadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="88dp"
+        android:fontFamily="@font/acherusbold"
+        android:text="admin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btnRegistrarEstudiante"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="#015B3C"
+        android:fontFamily="@font/acherusbold"
+        android:text="REGISTRO DE ESTUDIANTE"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busquedaEstudiante" />
+
+    <SearchView
+        android:id="@+id/busquedaEstudiante"
+        android:layout_width="369dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/border"
+        android:queryHint="Buscar por código ATEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/acherusbold"
+        android:text="Buscar estudiante (Ejm | ES0101):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameadmin2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="199dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="199dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/acherusbold"
+        android:text="o"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarEstudiante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busquedaEstudiante" />
+
+    <Button
+        android:id="@+id/btnRegistrarCursoAdmin"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="#015B3C"
+        android:fontFamily="@font/acherusbold"
+        android:text="REGISTRO DE CURSO"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarProgramaAdmin" />
+
+    <Button
+        android:id="@+id/btnRegistrarProgramaAdmin"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="#015B3C"
+        android:fontFamily="@font/acherusbold"
+        android:text="REGISTRO DE PROGRAMA"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarEstudiante" />
+
+    <ImageView
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="41dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cerrarsesion" />
+
+    <ImageView
+        android:id="@+id/btnAulaVirtual"
+        android:layout_width="76dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/img_3" />
+
+    <ImageView
+        android:id="@+id/btnSede"
+        android:layout_width="46dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_4" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="121dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busquedaEstudiante"
+        app:srcCompat="@drawable/admin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

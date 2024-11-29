@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EtacProyect1"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".MapEstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapDocActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerListaEstudiantes"
+            android:exported="false" />
+        <activity
+            android:name=".VerAprobarDesaprobar"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarProgramaEstudio"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarCursosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProgramasEstudioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerClasesDocActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CertificadosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CursosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HorariosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DocenteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarEstudiante"
+            android:exported="false" />
+        <activity
+            android:name=".EstudianteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfesorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDX2ArOo7OqCJg5ZhI8Vrhg9AaC92JKZGQ" />
+    </application>
+
+</manifest>
